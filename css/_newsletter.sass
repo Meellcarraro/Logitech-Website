@@ -1,0 +1,43 @@
+$fondo: rgb(97, 97, 97)
+$texto-blanco: #ffffff
+$boton: #c8f625
+
+
+#newsletter
+    background: $fondo
+    #form-cont
+        display: flex
+        flex-flow: column wrap
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding: 50px
+        p 
+            color: $texto-blanco
+            font-size: 20px
+            font-weight: 600
+        input[type="email"]
+            background-color: $texto-blanco
+            width: 520px
+            height: 52px
+            outline: none
+            border: none
+            border-radius: 50px
+            text-align: center
+            color: #000000
+            display: block
+            margin: auto
+        input[type="submit"]
+            background-color: $boton
+            width: 200px
+            height: 52px
+            outline: none
+            border: none
+            border-radius: 50px 
+            margin: 30px 
+            cursor: pointer
+            &:active
+                opacity: 0.5
+
+
+                

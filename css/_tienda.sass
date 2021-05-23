@@ -1,0 +1,50 @@
+
+$fondo: rgb(45, 166, 221)
+$fuente: #ffffff
+$boton: rgba(254,43,72,255)
+
+body 
+    .tienda-container
+        background: $fondo
+        min-width: 100vw
+        min-height: 100vh
+        position: relative
+        .tienda-aviso
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            display: flex
+            flex-flow: column wrap
+            align-items: center
+            justify-content: center
+            img 
+                width: 150px
+                height: 150px
+            p
+                color: $fuente
+                font-size: 1.25rem
+                text-align: center
+            .botonVolver
+                background-color: $boton
+                width: 200px
+                height: 52px
+                outline: none
+                border: none
+                border-radius: 50px 
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 20px 
+                cursor: pointer
+                color: white
+                text-transform: uppercase
+                letter-spacing: 0.5px
+                font-size: 0.875rem
+                text-decoration: none 
+                &:active
+                    opacity: 0.5
+                img 
+                    width: 25px
+                    height: 25px
+                    margin-right: 10px

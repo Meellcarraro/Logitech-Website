@@ -1,0 +1,187 @@
+
+$fondo: rgb(45, 166, 221)
+$fuente: #ffffff
+@media screen and ( max-width: 700px  )
+    
+    body
+        //tienda
+        .tienda-container
+            .tienda-aviso
+                img
+                    width: 100px
+                    height: 100px
+                p
+                    font-size: 1rem
+                .botonVolver
+                    width: 150px
+                    height: 35px
+                    font-size: 12px
+                    img 
+                        width: 15px
+                        height: 15px
+        //Página Principal
+        header 
+            .header-top
+                height: auto
+                .container-menu
+                    .menu
+                        display: none
+                        width: 100%
+                        a
+                            display: block
+                            padding: 10px
+                            margin: 6px 0px
+                            text-align: center
+                            &:hover 
+                                transform: scale(1.1,1.1)
+                        .carrito
+                            &::before
+                                content: 'Mi carrito'
+                                margin-right: 5px       
+                    #burger
+                        display: block
+            #headerImage
+                display: none
+            #headerImageMovil
+                display: block
+            .aviso
+                p 
+                    padding: 0px 20px
+                    font-size: 13px
+        #oferta
+            .contenedor
+                .ofertas
+                    .oferta
+                        .comprar-item
+                            padding: 15px
+                            font-size: 13px
+        #newsletter
+            #form-cont
+                overflow: hidden
+                padding: 20px
+                p 
+                    font-size: 20px
+                input[type="email"]
+                    width: 100%
+        footer
+            .contenedor
+                .footer-text
+                    a
+                       font-size: 14px
+                       margin: 5px
+
+@media screen and ( max-width: 420px  )
+    body
+        .contenedor
+        #newsletter 
+            #form-cont
+                p 
+                    font-size: 15px
+                input[type="submit"]
+                    height: 47px
+        header
+            .header-top
+                padding: 10px 20px
+            .aviso
+                p 
+                    padding: 0px 20px
+                    font-size: 12px
+        #destacados
+            .contenedor
+                .destacados
+                    #titulo-destacados
+                        font-size: 1.25rem
+                    .producto
+                        .producto-img
+                            width: 210px
+                            height: 210px
+                            img 
+                                width: 210px
+                                height: 210px
+                    .botonProducto
+                        a 
+                            width: 100%
+                            font-size: 0.9375rem
+        #ofertas
+            .contenedor
+                padding: 25px
+                .ofertas 
+                    .oferta
+                        .comprar-item
+                            padding: 12px
+                            font-size: 10px
+        footer
+            .contenedor
+                .footer-text
+                    a
+                       font-size: 12px
+@media screen and ( max-width: 330px  )
+    body
+        header
+            .aviso
+                p 
+                    padding: 0px 20px
+                    font-size: 10px
+        #ofertas
+            .contenedor
+                #titulo-ofertas
+                    font-size: 1.25rem
+                .ofertas
+                    .oferta
+                        .comprar-item
+                            padding: 5px
+                            font-size: 10px
+        #destacados
+            .contenedor
+                #titulo-destacados
+                    font-size: 1.25rem
+                .destacados
+                    .producto
+                        .producto-img
+                            width: 170px
+                            height: 170px
+                            img 
+                                width: 170px
+                                height: 170px
+                    .botonProducto
+                        a
+                            line-height: 1
+                            padding: 7px
+        footer
+            .contenedor
+                .footer-text
+                    a
+                       font-size: 10px
+
+@media screen and ( max-width: 320px  )
+    body 
+        header
+            .header-top
+                .container-menu
+                    .logo
+                        width: 100px
+            .aviso
+                p 
+                    padding: 0px 20px
+                    font-size: 10px
+        #newsletter
+            #form-cont
+                padding: 30px 9px
+                input[type="email"]
+                    width: 230px
+                    height: 45px
+                input[type="submit"]
+                    width: 150px
+                    margin: 15px
+                    height: 40px
+        footer
+            .contenedor
+                .footer-text
+                    padding: 10px
+                    a
+                       font-size: 8px
+                
+
+
+        
+                    

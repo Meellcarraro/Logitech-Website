@@ -1,0 +1,65 @@
+
+$fondo: rgb(45, 166, 221)
+$fuente: #ffffff
+
+@mixin flex-box($direction, $wrap)
+    display: flex
+    flex-direction: $direction
+    flex-wrap: $wrap
+    justify-content: space-between
+    align-items: center
+
+
+body 
+    header
+        .header-top
+            width: 100%
+            padding: 10px
+            background: $fondo
+            .container-menu
+                height: 100% 
+                @include flex-box($direction: row , $wrap: wrap)
+                .burger
+                    display: none
+                    transition: 0.50s 
+                    cursor: pointer
+                    img
+                        width: 25px
+                        height: 25px    
+                .burger.active     
+                    transform: rotate(90deg)
+                        
+                .menu
+                    a 
+                        color: $fuente
+                        font-size: 0.9375rem
+                        text-transform: uppercase
+                        list-style: none
+                        text-decoration: none
+                        margin-right: 23px
+                        font-weight: 500
+                        &:hover
+                            opacity: 0.8
+                .menu.active
+                    display: block
+                    
+        #headerImage
+            width: 100%
+            display: block
+        #headerImageMovil
+            width: 100%
+            display: none
+
+        .aviso
+            background-color: #000000
+            color: $fuente
+            padding: 5px
+            p 
+                margin: 0
+                text-align: center
+
+
+                
+                
+                
+        

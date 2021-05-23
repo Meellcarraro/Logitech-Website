@@ -1,0 +1,68 @@
+$producto: rgb(255, 42, 72)
+$precio-real: rgb(255, 42, 72)
+$fondo: #f6f6f6
+    
+#destacados
+    background: $fondo
+    .contenedor
+        padding: 50px
+        #titulo-destacados
+            font-size: 1.5625rem
+            font-weight: 600
+            text-transform: uppercase
+            text-align: center
+        .destacados
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-around
+            .producto
+                margin: 25px 
+                display: flex
+                flex-flow: column wrap
+                justify-content: center
+                align-items: center
+                .producto-img
+                    width: 250px
+                    height: 250px
+                    &:hover
+                        background: $producto
+                        border-radius: 3px
+                    img 
+                        width: 250px
+                        height: 250px
+                .producto-texto
+                    a 
+                        text-decoration: none
+                        color: #000000
+                        font-weight: 600
+                        font-size: 1rem
+                        display: inline-block
+                        margin: 20px 0
+                        text-align: center
+                    .precios
+                        text-align: center
+                        .precio
+                            font-size: 25px
+                            font-weight: 400
+                        .precio-real
+                            color: $precio-real
+                            text-decoration: line-through
+                            font-weight: 200
+                            font-size: 1rem
+                            margin-left: 10px
+            .botonProducto //no direciona a ningun lado
+                width: 100%
+                a   
+                    display: block
+                    background: red 
+                    width: 250px
+                    border-radius: 50px 
+                    cursor: pointer
+                    text-align: center
+                    line-height: 3
+                    color: #fff
+                    text-decoration: none
+                    margin: 30px auto
+                 
+                    
